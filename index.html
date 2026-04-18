@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HTM125</title>
+
+<!-- 🔥 ANTI CACHE -->
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>HTM<span>125</span></h1>
+  <div class="menu" onclick="toggleMenu()">☰</div>
+</header>
+
+<!-- MENU -->
+<div id="sidebar">
+  <a onclick="goToPage('home')">Home</a>
+  <a onclick="goToPage('slots')">Slots Game</a>
+  <a onclick="goToPage('live')">Live Game</a>
+  <a onclick="goToPage('sport')">Sport Game</a>
+  <a onclick="goToPage('promo')">Promo</a>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay" onclick="toggleMenu()"></div>
+
+<!-- HOME -->
+<section id="home" class="page active">
+  <div class="hero">
+    <img src="img/jackpot.gif" class="jackpot-gif">
+    <h2>Made to Be Played</h2>
+    <p>Platform Gaming Terbaik</p>
+  </div>
+
+  <div class="section">
+    <h3>Slots Game 🎰</h3>
+    <div class="card" onclick="goToPage('slots')">
+      <img src="img/slot1.jpg">
+    </div>
+    <p class="more" onclick="goToPage('slots')">Lihat Selengkapnya</p>
+  </div>
+
+  <div class="section">
+    <h3>Live Game 🎥</h3>
+    <div class="card" onclick="goToPage('live')">
+      <img src="img/live1.jpg">
+    </div>
+    <p class="more" onclick="goToPage('live')">Lihat Selengkapnya</p>
+  </div>
+
+  <div class="section">
+    <h3>Sport Game ⚽</h3>
+    <div class="card" onclick="goToPage('sport')">
+      <img src="img/sport1.jpg">
+    </div>
+    <p class="more" onclick="goToPage('sport')">Lihat Selengkapnya</p>
+  </div>
+
+  <div class="section">
+    <h3>Promo 🎁</h3>
+    <div class="card" onclick="goToPage('promo')">
+      <img src="img/promo1.jpg">
+    </div>
+    <p class="more" onclick="goToPage('promo')">Lihat Selengkapnya</p>
+  </div>
+</section>
+
+<!-- SLOTS -->
+<section id="slots" class="page">
+  <h2>Slots Game</h2>
+  <div class="grid" id="slotContainer"></div>
+</section>
+
+<!-- LIVE -->
+<section id="live" class="page">
+  <h2>Live Game</h2>
+  <div class="grid" id="liveContainer"></div>
+</section>
+
+<!-- SPORT -->
+<section id="sport" class="page">
+  <h2>Sport Game</h2>
+  <div class="grid" id="sportContainer"></div>
+</section>
+
+<!-- PROMO -->
+<section id="promo" class="page">
+  <h2>Promo</h2>
+  <div class="grid" id="promoContainer"></div>
+</section>
+
+<!-- 🔥 PAKAI VERSION BIAR TIDAK CACHE -->
+<script src="script.js?v=2"></script>
+
+</body>
+</html>

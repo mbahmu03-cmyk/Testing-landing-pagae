@@ -1,0 +1,161 @@
+body {
+  margin: 0;
+  background: #000;
+  color: white;
+  font-family: Arial;
+  padding-top: 70px;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  background: black;
+  z-index: 1000;
+}
+
+h1 span {
+  color: red;
+}
+
+/* MENU */
+.menu {
+  position: fixed;
+  right: 15px;
+  top: 15px;
+  font-size: 26px;
+  cursor: pointer;
+  padding: 10px 12px;
+  z-index: 2001;
+  background: rgba(0,0,0,0.8);
+  border-radius: 8px;
+  border: 1px solid #333;
+}
+
+/* SIDEBAR */
+#sidebar {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 220px;
+  height: 100%;
+  background: #111;
+  transition: right 0.3s ease;
+  z-index: 2000;
+  padding-top: 80px;
+  box-shadow: -5px 0 15px rgba(0,0,0,0.7);
+}
+
+#sidebar a {
+  display: block;
+  padding: 18px;
+  border-bottom: 1px solid #222;
+}
+
+/* OVERLAY */
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  z-index: 1500;
+}
+
+#overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* PAGE */
+.page {
+  display: none;
+  padding: 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+/* HERO */
+.hero {
+  text-align: center;
+  margin: 50px 0;
+}
+
+/* 🔥 GIF JACKPOT */
+.jackpot-gif {
+  display: block;
+  margin: 0 auto 15px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px red;
+}
+
+/* SECTION */
+.section {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+/* CARD */
+.card {
+  margin: auto;
+  width: 90%;
+  max-width: 320px;
+  background: #111;
+  border-radius: 15px;
+  padding: 12px;
+  border: 1px solid #222;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* BUTTON */
+button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background: red;
+  border: none;
+  color: white;
+  border-radius: 10px;
+}
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* TEXT */
+.more {
+  color: red;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* TAMBAHAN SAJA DI PALING BAWAH */
+.jackpot-gif {
+  display: block;
+  margin: 0 auto 15px;
+  width: 90%;
+  max-width: 300px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px red;
+}
